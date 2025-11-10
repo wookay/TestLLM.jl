@@ -11,9 +11,10 @@ Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
 LanguageModels = "ab0a9908-e786-42dd-bb58-44dd7522d931"
+Llama2 = "7841fa2c-192d-471c-ae30-1f93a4daddfc"
 
 [targets]
-test = ["Test", "Pkg", "Jive", "LanguageModels"]
+test = ["Test", "Pkg", "Jive", "LanguageModels", "Llama2"]
 
 [compat]
 julia = "1.9"
