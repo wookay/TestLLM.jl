@@ -1,0 +1,19 @@
+name = "TestLLM"
+uuid = "0c55b3a2-0a85-47cc-87c4-4b176c23db6d"
+version = "0.1.0"
+authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
+
+[sources]
+LanguageModels = {url = "https://github.com/rai-llc/LanguageModels.jl", rev = "main"}
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
+
+[targets]
+test = ["Test", "Pkg", "Jive", "LanguageModels"]
+
+[compat]
+julia = "1.9"
+Jive = "0.3"
