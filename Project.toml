@@ -5,6 +5,7 @@ authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
 
 [sources]
 LanguageModels = {url = "https://github.com/rai-llc/LanguageModels.jl", rev = "main"}
+Llama2 = {url = "https://github.com/cafaxo/Llama2.jl", rev = "master"}
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
