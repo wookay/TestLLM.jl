@@ -3,6 +3,11 @@ uuid = "0c55b3a2-0a85-47cc-87c4-4b176c23db6d"
 version = "0.1.0"
 authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
 
+[deps]
+Base64 = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
+
 [sources]
 LanguageModels = {url = "https://github.com/rai-llc/LanguageModels.jl", rev = "main"}
 Llama2 = {url = "https://github.com/cafaxo/Llama2.jl", rev = "master"}
@@ -13,10 +18,16 @@ Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
 LanguageModels = "ab0a9908-e786-42dd-bb58-44dd7522d931"
 Llama2 = "7841fa2c-192d-471c-ae30-1f93a4daddfc"
+BytePairEncoding = "a4280ba5-8788-555a-8ca8-4a8c3d966a71"
 
 [targets]
-test = ["Test", "Pkg", "Jive", "LanguageModels", "Llama2"]
+test = ["Test", "Pkg", "Jive", "LanguageModels", "Llama2", "BytePairEncoding"]
 
 [compat]
 julia = "1.9"
+HTTP = "1.10"
+JSON3 = "1.14"
 Jive = "0.3"
+LanguageModels = "1.0"
+Llama2 = "0.1"
+BytePairEncoding = "0.5"

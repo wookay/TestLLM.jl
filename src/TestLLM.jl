@@ -1,5 +1,5 @@
 module TestLLM
 
-greet() = print("Hello World!")
+include("tokugh/ollama_api.jl")
 
 end # module TestLLM
