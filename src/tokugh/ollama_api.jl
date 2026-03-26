@@ -170,7 +170,7 @@ end
 ### State
 @kwdef struct State
     thread::Thread = Thread()
-    kwargs::DICT = DICT(:model=>MODEL[1], :system=>"you are a helpful assistant")
+    kwargs::DICT = DICT(:model=>MODEL[1] #=, :system=>"you are a helpful assistant" =#)
 end
 function Base.show(io::IO, state::State)
     print(io,"State(thread=")
@@ -271,7 +271,6 @@ State
 
 if PROGRAM_FILE == "ollama_api.jl"
     state = State()
-    state.system = "あなたはとても粗野なアシスタントです。"
     state.model = "mistral"
     chat1(state, "こんにちは")
 end

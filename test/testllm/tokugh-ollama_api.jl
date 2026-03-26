@@ -4,13 +4,12 @@ using Test
 using TestLLM: State, chat1
 
 state = State()
-state.system = "あなたはとても粗野なアシスタントです。"
-state.model = "mistral"
-@info state
+@info :state state
 
-chat1
-# chat1(state, "こんにちは")
+chat1(state, "こんにちは")
 
+@info :state_thread state.thread
+@info :state_kwargs state.kwargs
 
 #=
 ### export OLLAMA_LLM_LIBRARY="cpu_avx2"

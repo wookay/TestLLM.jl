@@ -21,9 +21,10 @@ Llama2 = "7841fa2c-192d-471c-ae30-1f93a4daddfc"
 BytePairEncoding = "a4280ba5-8788-555a-8ca8-4a8c3d966a71"
 Zana = "a3c7e1f0-8b4d-4e2a-9f6c-1d5a8b3e7c0f"
 PromptingTools = "670122d1-24a8-4d70-bfce-740807c42192"
+ModelContextProtocol = "c58f755f-f2a7-4f48-bf29-4e9659b78499"
 
 [targets]
-test = ["Test", "Pkg", "Jive", "Llama2", "BytePairEncoding", "Zana", "PromptingTools"]
+test = ["Test", "Pkg", "Jive", "Llama2", "BytePairEncoding", "Zana", "PromptingTools", "ModelContextProtocol"]
 
 [compat]
 julia = "1.9"
@@ -34,3 +35,4 @@ Llama2 = "0.1"
 BytePairEncoding = "0.5"
 Zana = "0.0.1"
 PromptingTools = "0.93"
+ModelContextProtocol = "0.4"
