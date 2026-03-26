@@ -9,7 +9,6 @@ HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 JSON3 = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
 
 [sources]
-LanguageModels = {url = "https://github.com/rai-llc/LanguageModels.jl", rev = "main"}
 Llama2 = {url = "https://github.com/cafaxo/Llama2.jl", rev = "master"}
 Zana = {url = "https://github.com/taf-society/Zana.jl", rev = "main"}
 PromptingTools = {url = "https://github.com/svilupp/PromptingTools.jl", rev = "main"}
@@ -18,21 +17,19 @@ PromptingTools = {url = "https://github.com/svilupp/PromptingTools.jl", rev = "m
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
-LanguageModels = "ab0a9908-e786-42dd-bb58-44dd7522d931"
 Llama2 = "7841fa2c-192d-471c-ae30-1f93a4daddfc"
 BytePairEncoding = "a4280ba5-8788-555a-8ca8-4a8c3d966a71"
 Zana = "a3c7e1f0-8b4d-4e2a-9f6c-1d5a8b3e7c0f"
 PromptingTools = "670122d1-24a8-4d70-bfce-740807c42192"
 
 [targets]
-test = ["Test", "Pkg", "Jive", "LanguageModels", "Llama2", "BytePairEncoding", "Zana", "PromptingTools"]
+test = ["Test", "Pkg", "Jive", "Llama2", "BytePairEncoding", "Zana", "PromptingTools"]
 
 [compat]
 julia = "1.9"
 HTTP = "1.10"
 JSON3 = "1.14"
 Jive = "0.3"
-LanguageModels = "1.0"
 Llama2 = "0.1"
 BytePairEncoding = "0.5"
 Zana = "0.0.1"
