@@ -4,12 +4,17 @@ using Test
 using TestLLM: State, chat1
 
 state = State()
-@info :state state
+state.system = "you are a helpful assistant"
+@test isempty(state.thread.messages)
 
+chat1
+
+on_ci = haskey(ENV, "CI")
+if !on_ci
 chat1(state, "こんにちは")
 
-@info :state_thread state.thread
-@info :state_kwargs state.kwargs
+@test !isempty(state.thread.messages)
+end
 
 #=
 ### export OLLAMA_LLM_LIBRARY="cpu_avx2"
