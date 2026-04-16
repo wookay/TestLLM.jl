@@ -11,7 +11,7 @@ if !on_ci
 conversation = PT.aigenerate(schema,
                              prompt ;
                              verbose = true,
-                             model = "mistral",
+                             model = "gemma4",
                              return_all = true)
 @test conversation[1] isa PT.SystemMessage
 @test conversation[2] isa PT.UserMessage

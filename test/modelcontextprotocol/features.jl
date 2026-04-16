@@ -1,4 +1,4 @@
-module test_modelcontextprotocol_tool
+module test_modelcontextprotocol_features
 
 using Test
 using ModelContextProtocol: ModelContextProtocol as MCP
@@ -37,4 +37,4 @@ result = MCP.handle_call_tool(ctx, params)
 @test result isa MCP.HandlerResult
 @test result.response.result.content[1]["text"] == string("{", repr("version"), ":", repr(string(VERSION)), "}")
 
-end # module test_modelcontextprotocol_tool
+end # module test_modelcontextprotocol_features

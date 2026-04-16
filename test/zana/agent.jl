@@ -4,7 +4,7 @@ using Test
 using Zana
 
 config = ZanaConfig(
-    ollama = OllamaConfig(model="mistral")
+    ollama = OllamaConfig(model="gemma4")
 )
 
 agent = ZanaAgent(config, ".")
